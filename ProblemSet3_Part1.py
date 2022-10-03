@@ -7,11 +7,12 @@
 # Date:   Fall 2022
 #--------------------------------------------------------------
 
-#%% Code Block 1
+#%% Code Block 1: Python Syntax & Code Manipulation
 
-mountain = "Denali"
-nickname = 'Mt. McKinley'
-elevation == 20322 
+mountain  = "Denali"
+nickname  = "Mt. McKinley"
+elevation = "20322"
 
-print (mountain + ", formerly known as "" + nickname + ",)
-print ()"is " + elevation + '' above sea level.' )
+print (mountain + ", formerly\nknown as " "\"" + nickname + "\"" + "\nis " + elevation + "\' above sea level.")
+
+#%% Code Block 2

@@ -15,4 +15,4 @@ elevation = "20322"
 
 print (mountain + ", formerly\nknown as " "\"" + nickname + "\"" + "\nis " + elevation + "\' above sea level.")
 
-#%% Code Block 2
+#%% Code Block 2: Lists & Iteration

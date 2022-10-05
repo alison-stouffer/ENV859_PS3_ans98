@@ -25,3 +25,18 @@ data_list.append(user_item)
 
 for item in data_list:
     print(data_folder + "\\" + item)
+
+#%% Task 3: Lists & Iteration
+
+user_numbers = []
+
+for x in range(1, 4):
+    user_numbers.append(input("Enter an integer: "))
+    
+    
+    
+    
+    
+    
+    
+    

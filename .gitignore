@@ -3,3 +3,4 @@ OpenSpyder.bat
 #Ignore the Spyder project files
 .spyproject/*
 *.ini
+*.ini

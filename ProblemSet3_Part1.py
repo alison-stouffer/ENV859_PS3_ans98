@@ -32,11 +32,8 @@ user_numbers = []
 
 for x in range(1, 4):
     user_numbers.append(input("Enter an integer: "))
-    
-    
-    
-    
-    
+
+#stopped at 3.3
     
     
     

@@ -7,7 +7,7 @@
 # Date:   Fall 2022
 #--------------------------------------------------------------
 
-#%% Code Block 1: Python Syntax & Code Manipulation
+#%% Task 1: Python Syntax & Code Manipulation
 
 mountain  = "Denali"
 nickname  = "Mt. McKinley"
@@ -15,4 +15,13 @@ elevation = "20322"
 
 print (mountain + ", formerly\nknown as " "\"" + nickname + "\"" + "\nis " + elevation + "\' above sea level.")
 
-#%% Code Block 2: Lists & Iteration
+#%% Task 2: Lists & Iteration
+
+data_folder = "W:\859_data\\tri_state"
+data_list   = ["roads.shp", "road_types.dbf", "naip_imagery.tif"]
+user_item   = "streams.shp"
+
+data_list.append(user_item)
+
+for item in data_list:
+    print(data_folder + "\\" + item)

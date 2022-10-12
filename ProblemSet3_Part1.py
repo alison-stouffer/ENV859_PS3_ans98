@@ -31,9 +31,9 @@ for item in data_list:
 user_numbers = []
 
 for x in range(1, 4):
-    user_numbers.append(input("Enter an integer: "))
+    user_numbers.append(int(input("Enter an integer: ")))
 
 user_numbers.sort()
-    
-print(user_numbers[0])    
+
+print(user_numbers[2])  
     

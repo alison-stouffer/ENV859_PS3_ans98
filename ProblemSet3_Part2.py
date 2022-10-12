@@ -7,4 +7,15 @@
 # Date:   Fall 2022
 #--------------------------------------------------------------
 
-#%% Task 4: Lists, Dictionaries, String Manipulation, & Iteration
+#%% Task 4.1
+
+#Reading in the data.
+fileObj = open(file='transshipment_vessels_20180723.csv', mode='r')
+lineList = fileObj.readlines()
+fileObj.close()
+
+#Save the contents of the first line in the list of lines to the variable "headerLineString"
+headerLineString = █
+
+#Print the contents of the headerLine
+#print(headerLineString)

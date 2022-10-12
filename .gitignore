@@ -4,3 +4,4 @@ OpenSpyder.bat
 .spyproject/*
 *.ini
 *.ini
+.spyproject/config/workspace.ini

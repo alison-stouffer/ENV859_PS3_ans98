@@ -35,5 +35,15 @@ for x in range(1, 4):
 
 user_numbers.sort()
 
-print(user_numbers[2])  
-    
+print(user_numbers[2])
+
+#%% Task 3: Challenge
+
+user_numbers = []
+
+for x in range(1, 4):
+    user_numbers.append(int(input("Enter an integer: ")))
+
+user_numbers.sort(reverse=True)
+
+print(user_numbers)  

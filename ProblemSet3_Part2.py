@@ -92,29 +92,18 @@ for lineString in lineList:
 #Create an empty key list:
 matching_keys = []
 
-
-#use the value of the transmission_mmsi for the current line to query the vesselsDict created above to print the vessel’s mmsi and its fleet.
-
 #Extract intersecting keys in latitude and longitude dictionaries:
 for the_key in longDict:
     if the_key in latDict:
         matching_keys.append(the_key)
-
-
-
-
-#BONUS: If no vessels meet your criteria, print a message that states “No vessels met criteria”
      
-# Report whether no keys were found.
+#Display message if criteria are not met:
 if len(matching_keys) == 0:
-    print(f"Sara was not located on {user_date}")
+    print("No vessels meet criteria")
 
-#Reveal locations for each key in matching_keys.
-for matching_key in matching_keys:
-    obs_lat, obs_lon = location_dict[matching_key]
-    print(f"Record {matching_key} indicates Sara was seen at lat:{obs_lat},lon:{obs_lon} on {user_date}")
-    
-
-
+#Display message if criteria are met:
+for the_key in matching_keys:
+    if the_key, the_value in vesselDict.items():
+        print(f"Vessel #{the_key} flies the flag of {the_value}")
 
 

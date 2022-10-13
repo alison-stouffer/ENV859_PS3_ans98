@@ -54,3 +54,12 @@ for the_key, the_value in vesselDict.items():
        
 #%% Task 5
 
+#Open Data File
+fileObj = open(file='loitering_events_20180723.csv', mode='r')
+lineList = fileObj.readlines()
+fileObj.close()
+
+#Create Header Index
+headerLineString = lineList[0]
+headerItems = headerLineString.split(sep=',')
+

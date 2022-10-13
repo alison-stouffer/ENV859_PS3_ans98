@@ -51,3 +51,6 @@ for the_key, the_value in vesselDict.items():
     
     if the_key == vesselID:
        print(f"Vessel #{vesselID} flies the flag of {the_value}")
+       
+#%% Task 5
+

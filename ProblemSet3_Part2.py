@@ -102,8 +102,6 @@ if len(matching_keys) == 0:
     print("No vessels meet criteria")
 
 #Display message if criteria are met:
-for the_key in matching_keys:
-    if the_key, the_value in vesselDict.items():
+for the_key, the_value in vesselDict.items():
+    if the_key in matching_keys:
         print(f"Vessel #{the_key} flies the flag of {the_value}")
-
-

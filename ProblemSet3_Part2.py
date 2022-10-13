@@ -14,15 +14,33 @@ lineList = fileObj.readlines()
 fileObj.close()
 
 headerLineString = lineList[0]
+
 print(headerLineString)
 
 #%% Task 4.2
 
 headerItems = headerLineString.split(sep=',')
 
-#List the index of the mmsi, shipname, and fleet_name values
 mmsi_idx  = headerItems.index('mmsi')
 name_idx  = headerItems.index('shipname')
 fleet_idx = headerItems.index('fleet_name')
 
 print(mmsi_idx,name_idx,fleet_idx)
+
+#%% Task 4.3
+
+vesselDict = {}
+
+for lineString in lineList:
+
+    if lineString[0] == 'm':
+        continue
+    
+    lineData = lineString.split(sep=',')
+
+    mmsi = lineData[0]
+    fleet = lineData[4]
+#Adds info to the vesselDict dictionary
+    vesselDict[mmsi] = fleet
+
+#%% Task 4.4

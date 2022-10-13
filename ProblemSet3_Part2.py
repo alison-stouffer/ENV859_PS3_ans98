@@ -14,8 +14,6 @@ fileObj = open(file='transshipment_vessels_20180723.csv', mode='r')
 lineList = fileObj.readlines()
 fileObj.close()
 
-#Save the contents of the first line in the list of lines to the variable "headerLineString"
-headerLineString = █
-
-#Print the contents of the headerLine
-#print(headerLineString)
+#Displaying column headers.
+headerLineString = lineList[0]
+print(headerLineString)

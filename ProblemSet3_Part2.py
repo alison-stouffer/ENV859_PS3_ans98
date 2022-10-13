@@ -40,7 +40,14 @@ for lineString in lineList:
 
     mmsi = lineData[0]
     fleet = lineData[4]
-#Adds info to the vesselDict dictionary
+
     vesselDict[mmsi] = fleet
 
 #%% Task 4.4
+
+vesselID = '258799000'
+
+for the_key, the_value in vesselDict.items():
+    
+    if the_key == vesselID:
+       print(f"Vessel #{vesselID} flies the flag of {the_value}")

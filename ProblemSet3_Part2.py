@@ -63,9 +63,8 @@ fileObj.close()
 headerLineString = lineList[0]
 headerItems = headerLineString.split(sep=',')
 
-#Create empty latitude and longitude dictionaries:
-latDict  = {}
-longDict = {}
+#Create empty dictionary for targeted vessels that meet criteria:
+targetDict = {}
 
 #Read each line of data:
 for lineString in lineList:
@@ -82,19 +81,16 @@ for lineString in lineList:
     end_lat    = float(lineData[3])
     start_long = float(lineData[2])
 
-    #Add start and end latitudes to dictionary, if criteria is met:
-    if start_lat < 0 and end_lat > 0:
-        latDict[mmsi] = (start_lat, end_lat)
-    #Add start longitude to dictionary, if criteria is met:
-    if 165 < start_long < 170:
-        longDict[mmsi] = (start_long)
+    #Add vessel information to dictionary, if criteria is met:
+    if start_lat < 0 and end_lat > 0 and 165 < start_long < 170:
+        targetDict[mmsi] = (start_lat, end_lat, start_long)
  
 #Create an empty key list:
 matching_keys = []
 
 #Extract intersecting keys in latitude and longitude dictionaries:
-for the_key in longDict:
-    if the_key in latDict:
+for the_key in targetDict:
+    if the_key in vesselDict:
         matching_keys.append(the_key)
      
 #Display message if criteria are not met:
